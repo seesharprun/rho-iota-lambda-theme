@@ -1,6 +1,39 @@
 .spec img {
-   width:100%;
-   height:300px;
+    width: 100%;
+    height: 300px;
 }
 
-header {-webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; background-position: center; }
+header {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-align: left;
+}
+
+.list-group-item .badge {
+    color: white;
+    background-color: #222222;
+}
+
+.tint img {
+    width: 100%;
+}
+
+.tint:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0, 0.80);
+}

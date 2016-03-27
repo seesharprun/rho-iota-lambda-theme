@@ -1,21 +1,37 @@
 <header>
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-         <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <div id="hero-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+                {{#foreach posts}}
+                {{#if featured}}
+                {{#if @first}}                
+                <li data-target="#hero-carousel" data-slide-to="{{@index}}" class="active"></li>
+                {{else}}
+                <li data-target="#hero-carousel" data-slide-to="{{@index}}"></li>
+                {{/if}}
+                {{/if}}
+                {{/foreach}}
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-inner" role="listbox">
+                {{#foreach posts}}
+                {{#if featured}}
+                {{#if @first}}
                 <div class="item active">
-                    <img src="{{asset "img/carousel-1_opt.jpg"}}" alt="Header Image" />
+                {{else}}
+                <div class="item">
+                {{/if}}
+                    <figure class="tint">
+                        <img src="{{image}}" alt="{{{title}}}" />
+                    </figure>
                     <div class="header-content hidden-xs">
                         <div class="header-content-inner">
-                            <img class="coin" src="{{asset "img/coin_brok.png"}}" alt="Brother's Keeper'" />
-                            <h1>Header Text Lorem Ipsum Quisque Accumsan 1</h1>
+                            <img class="coin" src="{{asset "img/coin_brok.png"}}" />
+                            <h1>{{{title}}}</h1>
                             <hr>
                             <p>
-                                Quisque vehicula urna vulputate, maximus quam et, pharetra mi. Pellentesque consequat interdum mattis. Duis gravida...
+                                {{excerpt words="15"}}...
                             </p>
-                            <a href="#about" class="btn btn-primary btn-xl">
+                            <a href="{{url}}" class="btn btn-primary btn-xl">
                                 Learn More
                             </a>
                         </div>
@@ -23,11 +39,11 @@
                     <div class="carousel-caption visible-xs">
                           <div class="row">
                             <div class="col-xs-3">
-                                <img class="img-responsive" src="{{asset "img/coin_brok.png"}}" alt="Brother's Keeper'" />
+                                <img class="img-responsive" src="{{asset "img/coin_brok.png"}}" />
                             </div>
                             <div class="col-xs-9">
-                                <h3>Header Text Lorem Ipsum Quisque Accumsan 1</h3>
-                                <a href="#about" class="btn btn-primary btn-sm">
+                                <h3>{{{title}}}</h3>
+                                <a href="{{url}}" class="btn btn-primary btn-sm">
                                     Learn More
                                 </a>
                             </p>
@@ -35,6 +51,8 @@
                         </div> 
                     </div>
                 </div>
+                {{/if}}
+                {{/foreach}}
             </div>
         </div>
     </div>

@@ -21,9 +21,9 @@
 
 <section id="read">
     <article class="container {{post_class}}">
-    <h1>{{title}}</h1>
-        <p>
-            <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
+        <h1 class="text-center">{{title}}</h1>
+        <p class="text-center">
+            <small><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}</small>
         </p>
         <hr>
         {{content}}
