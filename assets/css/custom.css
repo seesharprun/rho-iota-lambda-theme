@@ -2,3 +2,5 @@
    width:100%;
    height:300px;
 }
+
+header {-webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; background-position: center; }

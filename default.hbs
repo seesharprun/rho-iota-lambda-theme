@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{@blog.title}}</title>
     <meta name="description" content="{{meta_description}}" />
-    <link rel="shortcut icon" href="{{asset "/favicon.ico "}}" />
+    <link rel="shortcut icon" href="{{asset "/favicon.ico"}}" />
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{asset "css/bootstrap.min.css"}}" type="text/css">
 
@@ -31,7 +31,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
- {{ghost_head}}
+    {{ghost_head}}
 </head>
 
 <body id="top" class="{{body_class}}">
@@ -49,7 +49,7 @@
             <span class="navbar-icon">
                     <img src="{{asset "img/shield.png"}}" alt="Fraternity Shield" />                    
                 </span>
-            <a class="navbar-brand page-scroll" href="/">
+            <a class="navbar-brand" href="{{@blog.url}}">
                     Rho Iota Lambda
                     <br />
                     <small>Alpha Phi Alpha Fraternity</small>   
@@ -94,8 +94,8 @@
     <script src="{{asset "js/holder.js"}}"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="{{asset "js/creative.js"}}"></script>
-  {{ghost_foot}}
+    <script src="{{asset "js/creative.js"}}"></script>    
+    {{ghost_foot}}
 </body>
 
 </html>
