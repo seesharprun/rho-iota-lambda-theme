@@ -1,18 +1,21 @@
 <header>
     <div id="hero-carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-                {{#foreach posts}}
-                {{#if featured}}
-                {{#if @first}}                
-                <li data-target="#hero-carousel" data-slide-to="{{@index}}" class="active"></li>
-                {{else}}
-                <li data-target="#hero-carousel" data-slide-to="{{@index}}"></li>
-                {{/if}}
-                {{/if}}
-                {{/foreach}}
+            {{#get "posts" limit="all" filter="featured:true"}}            
+            {{#foreach posts}}
+            {{#if featured}}
+            {{#if @first}}                
+            <li data-target="#hero-carousel" data-slide-to="{{@index}}" class="active"></li>
+            {{else}}
+            <li data-target="#hero-carousel" data-slide-to="{{@index}}"></li>
+            {{/if}}
+            {{/if}}
+            {{/foreach}}
+            {{/get}}
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-inner" role="listbox">
+                {{#get "posts" limit="all" filter="featured:true"}}
                 {{#foreach posts}}
                 {{#if featured}}
                 {{#if @first}}
@@ -57,6 +60,7 @@
                 </div>
                 {{/if}}
                 {{/foreach}}
+                {{/get}}
             </div>
         </div>
     </div>
