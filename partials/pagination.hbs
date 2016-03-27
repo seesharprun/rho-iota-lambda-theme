@@ -1,0 +1,20 @@
+<aside class="bg-dark">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>Learn more about the work we do in the community</h2> 
+            {{#if prev}}
+            <p>                
+                <a href="{{page_url prev}}" class="btn btn-default btn-xl wow tada newer-posts">View More Recent Projects</a> 
+            </p>
+            {{/if}}
+            <p>
+                <span class="page-number">Page {{page}} of {{pages}}</span> 
+            </p>
+            {{#if next}}
+            <p>
+                <a href="{{page_url next}}" class="btn btn-default btn-xl wow tada older-posts">View Older Projects</a> 
+            </p>
+            {{/if}}
+        </div>
+    </div>
+</aside>

@@ -1,0 +1,18 @@
+{
+  "name": "rho-iota-lambda-theme",
+  "version": "1.0.0",
+  "description": "Rho Iota Lambda Ghost Theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seesharprun/rho-iota-lambda-theme.git"
+  },
+  "keywords": [
+    "theme",
+    "ghost"
+  ],
+  "author": "Sidney Andrews <sidney@seesharprun.net> (http://www.seesharprun.net)",
+  "bugs": {
+    "url": "https://github.com/seesharprun/rho-iota-lambda-theme/issues"
+  },
+  "homepage": "https://github.com/seesharprun/rho-iota-lambda-theme#readme"
+}

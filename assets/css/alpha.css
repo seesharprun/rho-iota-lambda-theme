@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'alpha';
+    src:    url('../fonts/alpha.eot?kxgosy');
+    src:    url('../fonts/alpha.eot?kxgosy#iefix') format('embedded-opentype'),
+        url('../fonts/alpha.ttf?kxgosy') format('truetype'),
+        url('../fonts/alpha.woff?kxgosy') format('woff'),
+        url('../fonts/alpha.svg?kxgosy#alpha') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="alpha-coin-"], [class*=" alpha-coin-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'alpha' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.alpha-coin-bbbs:before {
+    content: "\e900";
+}
+.alpha-coin-brok:before {
+    content: "\e901";
+}
+.alpha-coin-bsoa:before {
+    content: "\e902";
+}
+.alpha-coin-ctos:before {
+    content: "\e903";
+}
+.alpha-coin-ghgc:before {
+    content: "\e904";
+}
+.alpha-coin-ldac:before {
+    content: "\e905";
+}
+.alpha-coin-proj:before {
+    content: "\e906";
+}
+.alpha-coin-vphp:before {
+    content: "\e907";
+}

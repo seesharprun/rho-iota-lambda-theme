@@ -1,0 +1,33 @@
+{{!< default}}
+
+{{#post}}
+ 
+{{#if image}}
+    <header style ="-webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; background-position: center; background-image: url('{{image}}');">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 style="font-size: 65px;">{{title}}</h1>
+                <hr />
+                {{#if meta_description}}
+                <p>
+                    {{meta_description}}                    
+                </p>
+                {{/if}}
+                <a href="#read" class="btn btn-primary btn-xl page-scroll">Read More</a>
+            </div>
+        </div>
+    </header>
+{{/if}}
+
+<section id="read">
+    <article class="container {{post_class}}">
+    <h1>{{title}}</h1>
+        <p>
+            <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
+        </p>
+        <hr>
+        {{content}}
+    </article>
+</section>
+
+{{/post}}

@@ -1,2 +1,2 @@
-# rho-iota-lambda-theme
-Ghost Theme
+# Rho Iota Lambda Theme
+## Ghost Blog Platform
